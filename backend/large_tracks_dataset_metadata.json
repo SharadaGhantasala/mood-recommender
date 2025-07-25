@@ -1,0 +1,23 @@
+{
+  "total_tracks": 1264,
+  "collection_date": "2025-07-21 23:44:50",
+  "unique_artists": 869,
+  "unique_albums": 1150,
+  "source_distribution": {
+    "popular_playlist": 1264
+  },
+  "genre_distribution": {
+    "playlist_popular": 1264
+  },
+  "popularity_stats": {
+    "mean": 54.364715189873415,
+    "median": 59.0,
+    "min": 0,
+    "max": 100
+  },
+  "duration_stats": {
+    "mean_seconds": 205.7602887658228,
+    "median_seconds": 198.4485
+  },
+  "explicit_percentage": 26.02848101265823
+}
