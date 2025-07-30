@@ -1,0 +1,31 @@
+{
+    "family": "neural-music-api",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "executionRoleArn": "arn:aws:iam::522814714960:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "neural-music-api",
+            "image": "522814714960.dkr.ecr.us-east-1.amazonaws.com/neural-music-api:latest",
+            "portMappings": [
+                {
+                    "containerPort": 8000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/neural-music-api",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }
+        }
+    ]
+}
