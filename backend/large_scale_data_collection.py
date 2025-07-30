@@ -403,14 +403,13 @@ def main():
     metadata = collector.save_dataset(df)
     
     # Display final summary
-    print("\n🎉 DAY 2 MISSION COMPLETE!")
     print("=" * 40)
-    print(f"📊 Total tracks collected: {metadata['total_tracks']:,}")
-    print(f"🎤 Unique artists: {metadata['unique_artists']:,}")
-    print(f"💽 Unique albums: {metadata['unique_albums']:,}")
-    print(f"⭐ Average popularity: {metadata['popularity_stats']['mean']:.1f}")
-    print(f"⏱️ Average duration: {metadata['duration_stats']['mean_seconds']:.0f} seconds")
-    print(f"🔞 Explicit content: {metadata['explicit_percentage']:.1f}%")
+    print(f"Total tracks collected: {metadata['total_tracks']:,}")
+    print(f"Unique artists: {metadata['unique_artists']:,}")
+    print(f" Unique albums: {metadata['unique_albums']:,}")
+    print(f"Average popularity: {metadata['popularity_stats']['mean']:.1f}")
+    print(f"Average duration: {metadata['duration_stats']['mean_seconds']:.0f} seconds")
+    print(f"Explicit content: {metadata['explicit_percentage']:.1f}%")
     
     print(f"\n🎵 Top collection sources:")
     for source, count in metadata['source_distribution'].items():
