@@ -8,7 +8,8 @@ frontend/node_modules/
 
 # Env files
 **/*.env
-
+venv/
+backend/venv/
 # VSCode
 .vscode/
 *.pkl
