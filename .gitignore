@@ -14,3 +14,20 @@ backend/venv/
 .vscode/
 *.pkl
 *.csv
+# Add these lines to .gitignore
+*.h5
+*.model
+__pycache__/
+.DS_Store
+node_modules/
+build/
+dist/
+
+# Large model files
+enhanced_api_model.pkl
+api_model.pkl
+neural_cf_model.pkl
+
+# Python cache
+*.pyc
+*.pyo
