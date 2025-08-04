@@ -1,3 +1,10 @@
+# Env files
+**/*.env
+venv/
+venv
+backend/venv/
+**/venv/
+**/.venv/
 # Python
 backend/.venv/
 backend/__pycache__/
@@ -6,10 +13,7 @@ backend/*.pyc
 # Node
 frontend/node_modules/
 
-# Env files
-**/*.env
-venv/
-backend/venv/
+
 # VSCode
 .vscode/
 *.pkl
@@ -31,3 +35,5 @@ neural_cf_model.pkl
 # Python cache
 *.pyc
 *.pyo
+__pycache__/
+*.py[cod]
